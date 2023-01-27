@@ -26,6 +26,11 @@
 * unmodified(수정하지 않음)
 * modified(수정함)
 * staged(스테이징됨)
+
+### Merge
+* 3-way-merge
+* fast-forward merge
+
 ---
 ## Git Naming Rule
 
@@ -84,6 +89,7 @@ tools
 util
 ...
 ```
+
 
 ## Ref
 > https://gorokke.tistory.com/m/22

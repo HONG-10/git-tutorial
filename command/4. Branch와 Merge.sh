@@ -18,8 +18,12 @@ $ git branch -D [BRANCH_NM] # 삭제할 브랜치가 현재 브랜치에 합쳐�
 ##############################################################
 # git checkout | 기준 Branch 변경
 ##############################################################
-# 기준 Branch 변경
+# 지정한 Commit Hash & Brach로 이동
+$ git checkout [COMMIT_HASH]
 $ git checkout [BRANCH_NM]
+
+$ git checkout 113da41
+$ git checkout master
 
 # 현재 브랜치에서 새로운 브랜치 생성 후 기준 Branch 변경
 $ git checkout -b [NEW_BRANCH_NM]
@@ -28,15 +32,8 @@ $ git checkout -b [NEW_BRANCH_NM]
 $ git checkout -m [BRANCH_NM] [NEW_BRANCH_NM]
 $ git checkout -M [BRANCH_NM] [NEW_BRANCH_NM]       # [NEW_BRANCH_NM]가 존재하지 않을 경우
 
-
-##############################################################
-# git checkout HEAD | workspace 변경파일 되돌리기
-##############################################################
 # 작업 트리의 변경 사항 돌려놓기
 $ git checkout HEAD <파일> [<파일>]
-
-# 지정한 커밋 해시로 이동
-$ git checkout [커밋 해시]
 
 ##############################################################
 # git merge | Branch 병합

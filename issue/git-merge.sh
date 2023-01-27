@@ -19,4 +19,24 @@ $ git push origin master
 ##############################################################
 Committing is not possible because you have unmerged files.
 
+$ git status
 $ git commit -am 'message'
+
+##############################################################
+# Branch Merge 복구하기
+##############################################################
+$ git reset --merge ORIG_HEAD
+
+$ git checkout master
+$ git checkout -b preservation_branch
+
+$ git checkout master
+$ git reset --merge ORIG_HEAD
+
+
+##############################################################
+# merge conflict 발생 시
+##############################################################
+
+
+
