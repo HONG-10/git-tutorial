@@ -70,6 +70,8 @@ $ git log
 $ git log --oneline
 $ git log --pretty=oneline   # 한줄로 표기하기
 $ git log --branches --graph
+$ git log -p
+$ git log -[NUM]        #* 최근 N 개만 출력
 
 # Option
 
