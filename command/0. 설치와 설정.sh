@@ -1,9 +1,9 @@
 ##############################################################
 # git config | 설정
 ##############################################################
---system | /etc/gitconfig       # All User & All Repository 3rd place
---global | ~/.gitconfig         # The User                  2nd place
---local  | .git/config          # The Repository (Default)  1st place 
+--system | /etc/gitconfig       #* All User & All Repository 3rd place
+--global | ~/.gitconfig         #* The User                  2nd place
+--local  | .git/config          #* The Repository (Default)  1st place 
 
 # Initial config
 $ git config --global user.name "사용자 이름"

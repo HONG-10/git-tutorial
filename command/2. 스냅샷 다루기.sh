@@ -35,7 +35,6 @@ $ git status
 
 
 
-
 ##############################################################
 # git diff | 파일 변경 내용 보기
 ##############################################################
@@ -47,18 +46,10 @@ $ git diff [이전커밋 id] [이후커밋 id]
 --check          # 공백문자 check
 
 
-
-
-
 ##############################################################
 # git difftool | diff 명령어 외부 Tool 사용
 ##############################################################
 $ git difftool
-
-
-
-
-
 
 
 ##############################################################
@@ -74,12 +65,9 @@ $ git commit --amend -m "UI 수정 ver.2" # Last Commit Message 수정
 $ git commit -C HEAD --amend
 
 
-
-
 ##############################################################
 # git reset | HEAD 되돌리기
 ##############################################################
-
 $ git reset HEAD <파일> [<파일>]
 
 $ git reset --soft [COMMIT_NM]      # commit된 파일들을 staging area로 돌려놓음. (commit 하기 전 상태로) | head 만 바뀜
@@ -91,15 +79,10 @@ $ git reset HEAD^                       # Last Commit reset
 
 
 
-
-
 ##############################################################
 # git rm | 파일 삭제
 ##############################################################
 $ git rm
-
-
-
 
 
 ##############################################################
@@ -112,11 +95,6 @@ $ git mv [SRC_PATH] [DEST_PATH]
 -k              # Skip move or rename actions which would lead to an error condition. An error happens when a source is neither existing nor controlled by Git, or when it would overwrite an existing file unless -f is given.
 -n | --dry-run  # Do nothing; only show what would happen
 -v | --verbose  # Report the names of files as they are moved.
-
-
-
-
-
 
 
 ##############################################################
@@ -133,4 +111,3 @@ $ git clean
 -e <pattern> | --exclude=<pattern>
 -x
 -X
-
