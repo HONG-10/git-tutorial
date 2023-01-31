@@ -43,7 +43,7 @@ $ git diff --staged         # Staging-Area to Last-commit(Remote-Repository)
 
 
 $ git diff [이전커밋 id] [이후커밋 id]
---check          # 공백문자 check
+#* --check          # 공백문자 check
 
 
 ##############################################################
@@ -57,9 +57,9 @@ $ git difftool
 ##############################################################
 $ git commit
 
-$ git commit -v                     # diff Message
-$ git commit -m "UI 수정 ver.1"     # commit Message
-$ git commit --amend -m "UI 수정 ver.2" # Last Commit Message 수정
+$ git commit -v                         #* diff Message
+$ git commit -m "UI 수정 ver.1"          #* commit Message
+$ git commit --amend -m "UI 수정 ver.2"  #* Last Commit Message 수정
 
 # Last Commit 수정 후 Message 재사용
 $ git commit -C HEAD --amend
@@ -70,12 +70,12 @@ $ git commit -C HEAD --amend
 ##############################################################
 $ git reset HEAD <파일> [<파일>]
 
-$ git reset --soft [COMMIT_NM]      # commit된 파일들을 staging area로 돌려놓음. (commit 하기 전 상태로) | head 만 바뀜
-$ git reset --mixed [COMMIT_NM]     # commit된 파일들을 working directory로 돌려놓음. (add 하기 전 상태로) | staging 도 그 때로 바뀜
-$ git reset --hard [COMMIT_NM]      # commit된 파일들 중 tracked 파일들을 working directory에서 삭제한다. | working디렉토리/staging 모두 그 때로 바꿈
+$ git reset --soft [COMMIT_NM]      #* commit된 파일들을 staging area로 돌려놓음. (commit 하기 전 상태로) | head 만 바뀜
+$ git reset --mixed [COMMIT_NM]     #* commit된 파일들을 working directory로 돌려놓음. (add 하기 전 상태로) | staging 도 그 때로 바뀜
+$ git reset --hard [COMMIT_NM]      #* commit된 파일들 중 tracked 파일들을 working directory에서 삭제한다. | working디렉토리/staging 모두 그 때로 바꿈
 
-$ git reset HEAD~[reset commit count]   # 원하는 Commit만큼 reset
-$ git reset HEAD^                       # Last Commit reset
+$ git reset HEAD~[reset commit count]   #* 원하는 Commit만큼 reset
+$ git reset HEAD^                       #* Last Commit reset
 
 
 
@@ -91,10 +91,10 @@ $ git rm
 $ git mv [SRC_PATH] [DEST_PATH]
 
 
--f | --force    # Force renaming or moving of a file even if the target exists
--k              # Skip move or rename actions which would lead to an error condition. An error happens when a source is neither existing nor controlled by Git, or when it would overwrite an existing file unless -f is given.
--n | --dry-run  # Do nothing; only show what would happen
--v | --verbose  # Report the names of files as they are moved.
+-f | --force    #* Force renaming or moving of a file even if the target exists
+-k              #* Skip move or rename actions which would lead to an error condition. An error happens when a source is neither existing nor controlled by Git, or when it would overwrite an existing file unless -f is given.
+-n | --dry-run  #* Do nothing; only show what would happen
+-v | --verbose  #* Report the names of files as they are moved.
 
 
 ##############################################################
@@ -103,11 +103,11 @@ $ git mv [SRC_PATH] [DEST_PATH]
 $ git clean
 
 
--d
--f | --force
--i | --interactive
--n | --dry-run
--q | --quiet
--e <pattern> | --exclude=<pattern>
--x
--X
+#* -d
+#* -f | --force
+#* -i | --interactive
+#* -n | --dry-run
+#* -q | --quiet
+#* -e <pattern> | --exclude=<pattern>
+#* -x
+#* -X

@@ -3,11 +3,11 @@
 ##############################################################
 $ git init
 
--q | --quiet
---bare
---template=<template_directory>
---separate-git-dir=<git dir>
---shared[=(false|true|umask|group|all|world|everybody|0xxx)]
+#* -q | --quiet
+#* --bare
+#* --template=<template_directory>
+#* --separate-git-dir=<git dir>
+#* --shared[=(false|true|umask|group|all|world|everybody|0xxx)]
 
 
 
