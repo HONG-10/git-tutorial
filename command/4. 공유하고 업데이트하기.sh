@@ -1,15 +1,16 @@
 ##############################################################
-# git fetch
+# git fetch | Remote에서 로컬로 다운로드
 ##############################################################
 $ git fetch
+$ git fetch [REMOTE_STORAGE_NM]
 
 
 
 
 ##############################################################
-# git pull
+# git pull | 
 ##############################################################
-$ git pull
+$ git pull [REMOTE_STORAGE_NM] [BRANCH_NM]
 
 
 
@@ -19,7 +20,7 @@ $ git pull
 ##############################################################
 # git push
 ##############################################################
-$ git push
+$ git push [REMOTE_STORAGE_NM] [BRANCH_NM]
 
 
 
@@ -29,7 +30,10 @@ $ git push
 ##############################################################
 # git remote
 ##############################################################
-$ git remote
+$ git remote add [REMOTE_STORAGE_NM] [GIT_URL]
+$ git remote add origin [GIT_URL]
+
+$ git remote remove [REMOTE_STORAGE_NM]
 
 
 

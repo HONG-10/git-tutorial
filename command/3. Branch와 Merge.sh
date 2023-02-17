@@ -7,7 +7,7 @@ $ git branch -r         #* Remote Branch List
 $ git branch -a         #* All Branch(Local+Remote) List
 
 # Branch 생성하기
-$ git branch [NEW_BRANCH_NM]                      #* 현재 브랜치에서 새로운 브랜치 생성
+$ git branch [NEW_BRANCH_NM]                      #* 현재 브랜치에서 새로운 Local 브랜치 생성
 $ git branch [NEW_BRANCH_NM] [브랜치 생성 위치]     #* 다른 시작 지점에서 브랜치 생성
 $ git branch -f [BRANCH_NM] [브랜치 생성 위치]      #* 기존의 브랜치를 새로운 브랜치로 생성
 
@@ -34,6 +34,7 @@ $ git checkout -M [BRANCH_NM] [NEW_BRANCH_NM]       #* [NEW_BRANCH_NM]가 존재
 
 # 작업 트리의 변경 사항 돌려놓기
 $ git checkout HEAD <파일> [<파일>]
+$ git checkout -- [FILE_NM] # 로컬의 변경 사항을 변경 전으로 되돌림
 
 ##############################################################
 # git merge | Branch 병합
