@@ -43,7 +43,7 @@ $ git diff --staged         # Staging-Area to Last-commit(Remote-Repository)
 
 
 $ git diff [이전커밋 id] [이후커밋 id]
-$ git diff [BRANCH_1_NM] [BRANCH_2_NM]
+$ git diff [BRANCH_1_NM] [BRANCH_2_NM] # 변경 사항 Merge 전 변경 사항 비교
 
 #* --check          # 공백문자 check
 
