@@ -1,6 +1,10 @@
 ##########################################################################
-# Remote Repository Local 프로젝트에 덮어쓰기
+# git push 에러
 ##########################################################################
-$ git fetch --all
+# reject-non-fast-forword
 
-$ git reset --hard origin/master
+1. remotes
+2. origin
+3. configure Fetch
+4. add or advanced
+5. save and fetch
